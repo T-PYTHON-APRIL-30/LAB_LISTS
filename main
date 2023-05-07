@@ -1,0 +1,21 @@
+
+# returns the sum of all the items in that list.
+def find_sum(list):
+    return sum(list)
+
+# eturns the largest number from a list of numbers.
+def larg_number(list):
+    return max(list)
+
+list = [2, 3, 4, 5, 15, 1, 43, 20]
+print(find_sum(list))
+print(larg_number(list))
+
+# newlist = [expression for item in iterable if condition == True]
+odd_number = [num for num in range(1200, 2000, 125) if num % 2 != 0]
+print(odd_number)
+
+# slicing to get a new list starting from the start to the 5th element.
+slice_odd_number = odd_number[:5]
+print(slice_odd_number)
+
