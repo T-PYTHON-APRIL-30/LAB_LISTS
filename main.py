@@ -67,3 +67,42 @@ Expected output:
 ```
 
 '''
+movies = [
+    ("The Shawshank Redemption", 1994, [9, 10, 10, 9, 8, 9]),
+    ("The Godfather", 1972, [10, 9, 8, 10, 9, 7]),
+    ("Pulp Fiction", 1994, [9, 8, 7, 8, 6, 5]),
+    ("The Dark Knight", 2008, [10, 9, 9, 8, 9, 8]),
+    ("Schindler's List", 1993, [8, 9, 9, 7, 6, 8]),
+    ("The Room", 2003, [1, 2, 3, 4, 5, 1])
+]
+print(movies[0][2])
+
+def average(list : list) -> int:
+    return round(sumAll(list)/len(list), 2)
+
+def averageAll() -> list:
+    averageList : list =[]
+    for tuple in movies :
+        averageList.append((tuple[0], average(tuple[2])))
+    return averageList
+
+print(averageAll())
+
+
+def filterOut(list:list) -> list:
+    return [x for x in list if x[1] >= 6]
+
+
+averageList = averageAll()
+filterList = filterOut(averageList)
+
+def toString(list : list):
+    count =0
+    for element in list:
+        for movie in movies:
+            if element[0] == movie[0]:
+                count +=1
+                print(f"{count}. {movie[0]} ({movie[1]}) - Avergae rating: {element[1]}")
+                break
+
+toString(filterList)
