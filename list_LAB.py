@@ -2,7 +2,7 @@
 * Q1: Write a function that takes a list as a parameter, and then returns the sum of all the items in that list.
 * Q2: Write a function that takes a list as a parameter, and then returns the largest number from a list of numbers.
 *Q3: Create an odd numbers list from the elements of a range from 1200 to 2000 with steps of 125, using [ list comprehension ].
-*Q4: use list slicing to get a new list from the previous list starting from the start to the 5th element in the list.'''
+Q4: use list slicing to get a new list from the previous list starting from the start to the 5th element in the list.'''
 
 def sumList (myList:list) -> int:
     sum = 0
@@ -15,13 +15,9 @@ def largestNum (myList:list) -> int:
     return max(myList)
 
 def oddNumbers () -> list:
-    newList = []
+    oddList = [oddNum for oddNum in range(1200,2000,125) if oddNum%2!=0]
 
-    for n in range (1200,2000,125): 
-        if n%2 != 0:
-            newList.append(n)
-
-    return newList
+    return oddList
 
 def slicingList(myList:list) -> list:
     newList = myList[0:6]
