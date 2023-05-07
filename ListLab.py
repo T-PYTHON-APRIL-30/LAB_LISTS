@@ -12,7 +12,7 @@ def largestNumInList(givenList : list):
 
 print(largestNumInList(myList))
 
-oddList = [x for x in range(1200,2000,125) if x%2 != 0]
+oddList = [x for x in range(1200,4000,125) if x%2 != 0]
 print(oddList)
 
 slicedList = oddList[:5]
