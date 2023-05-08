@@ -10,8 +10,7 @@ def movies(list_of_movies:list):
  for elem in list_of_movies:
     s= sum(elem[2])
     l = len(elem[2])
-    result = s //l
+    result = s / l
     if result >6:
-       print(f"{elem[0]}. ({elem[1]}) - Average rating: {float(result)} ★")
-       #print(f"{elem[0]}. ({elem[1]}) - Average rating: {round(result,2)} ★")
+       print(f"{elem[0]}. ({elem[1]}) - Average rating: {round(result,2)} ★")
 movies(list_of_movies)
