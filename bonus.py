@@ -9,7 +9,7 @@ movies = [
 
 def average_rating(rate:list):
     total=0
-    num=1
+    num=0
     for n in rate:
         total+=n
         num+=1
@@ -25,7 +25,7 @@ def Display(display_list):
     i=0
     for num in display_list:
         avg=average_rating(display_list[i][2])
-        if Filter_rate(avg):
+        if Filter_rate(avg)==True:
             print(f"{display_list[i][0]} ({display_list[i][1]}) - Avergae rating: {round(avg,2)} ★ ")
         i+=1
 Display(movies)
