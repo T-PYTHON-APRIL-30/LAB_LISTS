@@ -36,6 +36,4 @@ print(odd_numbers)
 ### Q4: use list slicing to get a new list from the previous list starting from the start to the 5th 
 # element in the list.
 num_list3= [2, 3, 4, 5, 15, 1, 43, 20]
-
-new_num_list3 =num_list3 [5:]
-print (new_num_list3)
+print (num_list3[0:5:])
