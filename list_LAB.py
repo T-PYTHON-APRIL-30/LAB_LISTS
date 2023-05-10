@@ -20,7 +20,7 @@ def oddNumbers () -> list:
     return oddList
 
 def slicingList(myList:list) -> list:
-    newList = myList[0:6]
+    newList = myList[0:5]
     return newList
 
 
