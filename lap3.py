@@ -29,34 +29,49 @@ Expected output:
 4. Schindler's List (1993) - Avergae rating: 7.83 ★
 5. Pulp Fiction (1994) - Avergae rating: 7.17 ★'''
 #Q1: Write a function that takes a list as a parameter, and then returns the sum of all the items in that list.
-myList=[2, 3, 4, 5, 15, 1, 43, 20]
+ListOfNum=[2, 3, 4, 5, 15, 1, 43, 20]
+def ItemsSum(ListOfNum:list)->int:
+    for items in ListOfNum:
+        sum(items)
+        return sum
+print(f"the sum of all items is: \n {ItemsSum()}")
+'''myList=[2, 3, 4, 5, 15, 1, 43, 20]
 def sumOfPar(myList=[]):
     sum=''
     for i in myList:
         sum+=i
     return sum
 sumOfPar()
-print(sum)
+print(sum)'''
 #Q2: Write a function that takes a list as a parameter, and then returns the largest number from a list of numbers.
-def LargOfPar(myList=[]):
+def LargestNum(MyList:list):
+    print(f"please give me your list of numbers:{list(input(MyList))}")
+    while MyList==True:
+        if MyList[i]>MyList[i+1]:
+            LargNumValue=MyList[i]
+        elif MyList[i]<MyList[i+1]:
+             LargNumValue=MyList[i+1]
+        return LargestNum
+print(f"the largest number in the list is{LargestNum()}")
+'''def LargOfPar(myList=[]):
     num=''
     for i in myList:
         if i>num:
             largestNum=i
     return num
 LargOfPar()
-print(f"the largest number is :"{largestNum})
+print(f"the largest number is :"{largestNum})'''
 #Q3: Create an odd numbers list from the elements of a range from 1200 to 2000 with steps of 125, using [ list comprehension ].
-listComp=[1200:2000:125]
+'''listComp=[1200:2000:125]
 def AnOddNum(oddNum:int):
     for n in range(1200,2000):
         if n%2!=0
         oddNum =n
         return oddNum
-AnOddNum(oddNum)
+AnOddNum(oddNum)'''
 #Q4: use list slicing to get a new list from the previous list starting from the start to the 5th element in the list.
-print("my slicing list is:")
+'''print("my slicing list is:")
 i=0
 for i in myList:
-    print(myList[:4]," ")
+    print(myList[:4]," ")'''
 
